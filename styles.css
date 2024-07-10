@@ -1,0 +1,301 @@
+body {
+    background-color: #FFFFFF;
+    color: #2C2C2C;
+    font: normal 100% Georgia, serif;
+}
+
+.main-logo-text, .mini-logo-text, .welcome-text, .main-part-item-text-title, .introduction-text {
+    font-family: "Ubuntu", sans-serif;
+}
+
+.subwelcome-text, .main-part-item-text-subtitle {
+    font-family: "Open Sans", sans-serif;
+}
+
+#page {
+    width: 90%;
+    margin: 0.05em auto;
+    max-width: 1250px;
+}
+
+a {
+    text-decoration: none;
+    color: #2C2C2C;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.nav-element {
+    font-weight: bold;
+}
+
+.nav-element:hover {
+    color: #6DB618;
+}
+
+.nav-element:link {
+    color: #2C2C2C;
+}
+
+.top-page-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+}
+
+.top-page-part .logo-text {
+    flex: 0 0 auto;
+}
+
+.top-page-part .link-list {
+    flex: 0 0 auto;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+.logo-icon {
+    width: 10%;
+}
+
+.logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+    width: 94%;
+}
+
+.mini-logo-text {
+    margin: 0 0 0 0;
+}
+
+.main-logo-text {
+    font-size: 3em;
+    margin: 0 0 0 0;
+}
+
+.mini-text {
+    flex: 0 0 auto;
+    margin: 0;
+    font-size: 0.75em;
+    font-weight: bold;
+}
+
+.welcome-part {
+    width: 93,75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5% 0 1.5% 0;
+}
+
+.welcome-part .welcome-part-image {
+    float: left;
+    width: 49%;
+}
+
+.welcome-part-text {
+    float: right;
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.welcome-part  .introduction-text {
+    text-decoration: underline;
+    font-weight: bold;
+    margin: 0 0 0.5em 0;
+}
+
+.welcome-text {
+    width: 100%;
+    font-size: 2.1em;
+    margin: 0;
+}
+
+.more-info-link {
+    color: #6DB618;
+    font-weight: bold;
+}
+
+.main-part-item-link-project:hover #project-nav {
+    text-decoration: underline;
+}
+
+.main-part-item-link-photo:hover #photo-nav {
+    text-decoration: underline;
+}
+
+.main-part-item-link-links:hover #links-nav {
+    text-decoration: underline;
+}
+
+.main-part-item-link-ideas:hover #ideas-nav {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+    .welcome-text {
+        width: 100%;
+        font-size: 1.5em;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .main-part {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .main-part-item {
+        flex: 1 1 24%;
+        box-sizing: border-box;
+    }
+    
+    .main-part-item-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .main-part-item-image-container {
+        width: 96%;
+        padding-top: 75%;
+        position: relative;
+    }
+    
+    
+    .main-part-item-text {
+        display: flex;
+        flex-direction: column;
+        width: 96%;
+    }
+    
+    .main-part-item-text-title {
+        margin: 3.5% 0 0 0;
+    }
+    
+    .main-part-item-text-subtitle {
+        margin: 3% 0 0 0;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    #home-nav  {
+        visibility: collapse;
+    }
+    #about-nav  {
+        visibility: collapse;
+    }
+
+    #projects-nav  {
+        visibility: collapse;
+    }
+
+
+    #link-nav {
+        visibility: collapse;
+    }
+
+    .main-logo-text {
+        font-size: 2em;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mini-text {
+        visibility: collapse;
+    }
+
+    .top-page-part {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    #nav-menu {
+        float: right;
+    }
+
+    nav {
+        display: flex;
+        justify-content: end;
+        width: 1em;
+    }
+
+    .main-part {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    
+    .main-part-item {
+        flex: 1 1 24%;
+    }
+    
+    .main-part-item-image-container {
+        width: 100%;
+    }
+    
+    .main-part-item-image {
+        width: 100%;
+        height: 6em;
+        object-fit: cover;
+    }
+    
+    .main-part-item-text {
+        width: 100%;
+    }
+    
+    .main-part-item-text-title {
+        margin: 1% 0 0 0;
+    }
+    
+    .main-part-item-text-subtitle {
+        margin: 0 0 3.5% 0;
+    }
+    .welcome-part {
+        width: 93,75%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        margin: 1.5% 0 5% 0;
+    }
+
+    .welcome-part .welcome-part-image {
+        width: 100%;
+    }
+    
+    .welcome-part-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 1.5% 0 0 0;
+
+    }
+    
+    .subwelcome-text {
+        margin: 1% 0;
+    }
+}
