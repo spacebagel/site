@@ -2,7 +2,6 @@
     --main-accent-color: #6DB618;
 }
 
-
 body {
     background-color: #FFFFFF;
     color: #2C2C2C;
@@ -71,6 +70,10 @@ body {
 
 .top-page-part .link-list {
     flex: 0 0 auto;
+}
+
+.top-page-part-sub-menu {
+    display: none;
 }
 
 nav {
@@ -179,7 +182,6 @@ nav {
 
 }
 
-
 svg {
     fill: var(--main-accent-color);
     width: 2em;
@@ -221,16 +223,14 @@ svg:hover {
 
 }
 
-
-
 /* About Page : Start */
 
 .middle-page-part-about {
     font-family: "Ubuntu", sans-serif;
 }
 
-
 @media screen and (min-width: 750px) {
+
     /* Concrete Part : Start */
     .middle-page-part-about {
         display: flex;
@@ -243,7 +243,7 @@ svg:hover {
     .middle-page-part-about-concrete-section {
         font-size: 1.4em;
         font-weight: bold;
-        margin: 1em 0 0.5em 0 ;
+        margin: 1em 0 0.5em 0;
     }
 
     .middle-page-part-about-concrete-interest-icon {
@@ -252,14 +252,15 @@ svg:hover {
 
     .middle-page-part-about-concrete-interest-language {
         width: 0.9em;
-        
+
     }
 
     .middle-page-part-about-concrete-lang-lvl {
         margin: 0 0 0.5em 0;
         font-weight: bold;
-        color:#6DB618;
+        color: #6DB618;
     }
+
     .middle-page-part-about-concrete-lang {
         margin: 0 0 0 0;
     }
@@ -271,12 +272,6 @@ svg:hover {
         margin: 0;
     }
 
-    /* .middle-page-part-about-concrete-work-place-title {
-        margin: 0 0 0 0;
-        color: var(--main-accent-color);
-        font-weight:bold;
-    } */
-
     .middle-page-part-about-concrete-work-place-years {
         margin: 0;
     }
@@ -284,10 +279,12 @@ svg:hover {
     .middle-page-part-about-concrete-work-place-description {
         margin: 0;
     }
+
     .middle-page-part-about-concrete-work-position {
         margin: 0 0 1em 0;
         font-weight: bold;
     }
+
     /* Concrete Part : End */
 
     /* General Part : Start */
@@ -314,11 +311,11 @@ svg:hover {
         display: flex;
         justify-content: center;
     }
-    
+
     .middle-page-part-about-general-section {
         font-size: 1.4em;
         font-weight: bold;
-        margin: 1em 0 0.5em 0 ;
+        margin: 1em 0 0.5em 0;
         text-align: center;
     }
 
@@ -333,7 +330,7 @@ svg:hover {
     .middle-page-part-about-general-study-and-work-place-title {
         margin: 0 0 0 0;
         color: var(--main-accent-color);
-        font-weight:bold;
+        font-weight: bold;
         text-align: center;
     }
 
@@ -347,6 +344,7 @@ svg:hover {
         text-align: center;
         margin: 0 0 1em 0;
     }
+
     .middle-page-part-about-general-study-and-work-position {
         margin: 0 0 1em 0;
         text-align: center;
@@ -356,14 +354,16 @@ svg:hover {
     /* General Part : End */
 }
 
-@media screen and (max-width: 750px) { 
+@media screen and (max-width: 750px) {
     .middle-page-part-about {
         display: flex;
         flex-direction: column;
     }
+
     .middle-page-part-about-concrete {
-        order: 1;        
-    }    
+        order: 1;
+    }
+
     .middle-page-part-about-concrete-interest-icon {
         width: 2.5em;
     }
@@ -379,13 +379,13 @@ svg:hover {
     .middle-page-part-about-general-section {
         font-size: 1.4em;
         font-weight: bold;
-        margin: 1em 0 0.5em 0 ;
+        margin: 1em 0 0.5em 0;
     }
 
     .middle-page-part-about-general-study-and-work-place-title {
         margin: 0 0 0 0;
         color: var(--main-accent-color);
-        font-weight:bold;
+        font-weight: bold;
     }
 
     .middle-page-part-about-general-study-and-work-place-years {
@@ -396,6 +396,7 @@ svg:hover {
         margin: 0;
         margin: 0 0 1em 0;
     }
+
     .middle-page-part-about-general-study-and-work-position {
         margin: 0 0 1em 0;
         font-weight: bold;
@@ -404,7 +405,7 @@ svg:hover {
     .middle-page-part-about-concrete-section {
         font-size: 1.4em;
         font-weight: bold;
-        margin: 1em 0 0.5em 0 ;
+        margin: 1em 0 0.5em 0;
     }
 
     .middle-page-part-about-concrete-work-place-title {
@@ -421,6 +422,7 @@ svg:hover {
     .middle-page-part-about-concrete-work-place-description {
         margin: 0;
     }
+
     .middle-page-part-about-concrete-work-position {
         margin: 0 0 1em 0;
         font-weight: bold;
@@ -429,15 +431,14 @@ svg:hover {
     .middle-page-part-about-concrete-lang-lvl {
         margin: 0 0 0.5em 0;
         font-weight: bold;
-        color:#6DB618;
+        color: #6DB618;
     }
+
     .middle-page-part-about-concrete-lang {
         margin: 0 0 0 0;
     }
 }
-
 /* About Page : End */
-
 
 @media screen and (max-width: 1024px) {
     .welcome-text {
@@ -462,6 +463,10 @@ svg:hover {
 
     }
 
+    #menu-nav {
+        display: none;
+    }
+
     .main-part-item-image {
         position: absolute;
         top: 0;
@@ -476,7 +481,6 @@ svg:hover {
         padding-top: 75%;
         position: relative;
     }
-
 
     .main-part-item-text {
         display: flex;
@@ -493,23 +497,27 @@ svg:hover {
     }
 }
 
-
 @media screen and (max-width: 750px) {
     #home-nav {
-        visibility: collapse;
+        display: none;
     }
 
     #about-nav {
-        visibility: collapse;
+        display: none;
     }
 
     #projects-nav {
-        visibility: collapse;
+        display: none;
     }
 
-
     #link-nav {
-        visibility: collapse;
+        display: none;
+    }
+
+    .link-list {
+        display: flex;
+        justify-content: end;
+        align-items: center;
     }
 
     .main-logo-text {
@@ -524,7 +532,6 @@ svg:hover {
 
     .top-page-part {
         display: flex;
-        justify-content: space-between;
         align-items: center;
         margin: 0;
         width: 100%;
