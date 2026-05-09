@@ -1,0 +1,42 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Hell\o!o/</h1>
+			<p>
+				Welcome to my site. I'm just another yet programmer, student,
+				Linux-user and gamer.
+			</p>
+
+			<p>
+				This is that corner of the internet where I write about
+				technology and programming when something clicks. Between the code, there are photos from travels.
+			</p>
+
+			<p>
+				And then there’s everything else: notes on books, observations
+				from daily life, half-formed ideas that don’t fit anywhere else.
+			</p>
+
+			<p>Thanks for stopping by.</p>
+
+			<p>
+				<!-- <b><a href="/about">More about me...</a></b> -->
+				 <b>(test only Astro site version)</b>
+			</p>
+			<img src="../welcome-image.png" />
+		</main>
+		<Footer />
+	</body>
+</html>

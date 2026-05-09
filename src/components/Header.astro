@@ -1,0 +1,89 @@
+---
+import { SITE_TITLE } from "../consts";
+import HeaderLink from "./HeaderLink.astro";
+---
+
+<header>
+	<nav>
+		<h2><a href="/">{SITE_TITLE}</a></h2>
+		<div class="internal-links">
+			<HeaderLink href="/">Home</HeaderLink>
+			<HeaderLink href="/blog">Blog</HeaderLink>
+			<!-- <HeaderLink href="/about">About</HeaderLink> -->
+		</div>
+		<svg id="menu-nav" viewBox="0 -5.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg">
+			<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+				<g id="Dribbble-Light-Preview" transform="translate(-179.000000, -205.000000)" fill="#000000">
+					<g id="icons" transform="translate(56.000000, 160.000000)">
+						<path d="M123,55 L144,55 L144,53 L123,53 L123,55 Z M123,47 L144,47 L144,45 L123,45 L123,47 Z M123,51 L144,51 L144,49 L123,49 L123,51 Z" id="menu_list-[#1527]"></path>
+					</g>
+				</g>
+			</g>
+		</svg>
+	</nav>
+</header>
+
+<div class="mobile-sub-menu">
+	<a href="/">Home</a>
+	<a href="/blog">Blog</a>
+	<!-- <a href="/about">About</a> -->
+</div>
+
+<style>
+	h2 {
+		margin: 0;
+		font-size: 2em;
+	}
+	h2 a,
+	h2 a.active {
+		text-decoration: none;
+	}
+	.internal-links,
+	.internal-links a {
+		display: flex;
+		text-decoration: none;
+	}
+
+	#menu-nav {
+		display: none;
+		cursor: pointer;
+		width: 30px;
+		height: 30px;
+	}
+
+	.mobile-sub-menu {
+		display: none;
+		flex-direction: column;
+		background: white;
+		padding: 1em;
+		gap: 0.5rem;
+		box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+	}
+
+	.mobile-sub-menu.show {
+		display: flex;
+	}
+
+	.mobile-sub-menu a {
+		padding: 0.5em 1em;
+		text-decoration: none;
+		color: #000;
+	}
+
+	@media (max-width: 768px) {
+		.internal-links {
+			display: none;
+		}
+		#menu-nav {
+			display: block;
+		}
+	}
+
+	@media (min-width: 769px) {
+		.mobile-sub-menu {
+			display: none !important;
+		}
+	}
+</style>
+
+<script src="../burger.js"></script>
