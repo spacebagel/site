@@ -6,7 +6,7 @@ import { defineConfig, fontProviders } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://spacebagel.github.io',
+	site: 'https://spacebagel.github.io/site',
 	base: '/site',
 	integrations: [mdx(), sitemap()],
 	fonts: [
