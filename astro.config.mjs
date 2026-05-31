@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 import { defineConfig, fontProviders } from 'astro/config';
 
 export default defineConfig({
-	site: 'https://example.com',
+	site: 'https://spacebagel.github.io/site',
 	integrations: [mdx(), sitemap()],
 	fonts: [
 		{
