@@ -1,8 +1,8 @@
 ---
-title: 'The best software in the world'
-description: 'My own software top'
+title: 'My Favorite Software'
+description: 'The best software in my opinion'
 pubDate: 'May 07 2026'
-heroImage: '../../assets/placeholder.png'
+heroImage: '../../../images/posts/robi_potato.png'
 ---
 
 #### Internet

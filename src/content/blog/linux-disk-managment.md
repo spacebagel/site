@@ -2,7 +2,7 @@
 title: 'Работа с диском в Linux'
 description: 'Работа с диском в Linux'
 pubDate: 'May 07 2026'
-heroImage: '../../assets/placeholder.png'
+heroImage: '../../../images/posts/me_minecraft.png'
 ---
    
 ## 1. Работа с дисками и разделами
